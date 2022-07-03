@@ -1,4 +1,10 @@
-body {
-  background: black;
-  color: white;
+/* Vynulování defaultních stylů, které má pro každý element různý prohlížeč jinak */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
