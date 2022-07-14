@@ -27,7 +27,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    e.target.reset();
+    e.target.reset(); //resetne formulář při submitu
   };
 
   return (
