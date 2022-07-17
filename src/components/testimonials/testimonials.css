@@ -31,12 +31,6 @@
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background: var(--color-primary);
 }
-.swiper-slide {
-  cursor: grab;
-}
-.swiper-slide:active {
-  cursor: grabbing;
-}
 
 /* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
