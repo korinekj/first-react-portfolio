@@ -10,30 +10,38 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 const App = () => {
-  //Zvýrazní aktuální sekci v Nav při scrollování stránkou
-  useEffect(() => {
+  //Funkce -> Zvýrazní aktuální sekci v Nav při scrollování stránkou
+  const highlightNavLinkOnScroll = () => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
 
-    window.addEventListener("scroll", () => {
-      let current = "";
+    let current = "";
 
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
 
-        if (window.pageYOffset >= sectionTop - 200) {
-          current = section.getAttribute("id");
-        }
-      });
-
-      navLinks.forEach((navItem) => {
-        navItem.classList.remove("active");
-        if (navItem.href === "http://localhost:3000/#" + current) {
-          navItem.classList.add("active");
-        }
-      });
+      if (window.pageYOffset >= sectionTop - 200) {
+        current = section.getAttribute("id");
+      }
     });
-  });
+
+    navLinks.forEach((navItem) => {
+      navItem.classList.remove("active");
+      if (navItem.href === "http://localhost:3000/#" + current) {
+        navItem.classList.add("active");
+      }
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", highlightNavLinkOnScroll);
+
+    // cleanup this component
+    return () => {
+      window.removeEventListener("scroll", highlightNavLinkOnScroll);
+    };
+  }, []);
+
   return (
     <>
       <Header />
