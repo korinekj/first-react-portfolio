@@ -10,7 +10,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 const App = () => {
-  //Funkce -> Zvýrazní aktuální sekci v Nav při scrollování stránkou
+  //Funkce -> Zvýrazní aktuální sekci (nav link) při scrollování stránkou
   const highlightNavLinkOnScroll = () => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
@@ -33,6 +33,7 @@ const App = () => {
     });
   };
 
+  //Component did mount -> pouze při prvním renderu přidá EventListener ([])
   useEffect(() => {
     window.addEventListener("scroll", highlightNavLinkOnScroll);
 
