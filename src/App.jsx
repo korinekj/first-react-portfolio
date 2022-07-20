@@ -33,7 +33,7 @@ const App = () => {
     });
   };
 
-  //Component did mount -> pouze při prvním renderu přidá EventListener ([])
+  //ComponentDidMount -> pouze při prvním renderu přidá EventListener ([])
   useEffect(() => {
     window.addEventListener("scroll", highlightNavLinkOnScroll);
 
