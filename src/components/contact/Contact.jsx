@@ -49,7 +49,7 @@ const Contact = () => {
             <SiMessenger className="contact__option-icon" />
             <h4>Messenger</h4>
             <h5>Jarda Kořínek</h5>
-            <a href="https://m.me/" target="_blank">
+            <a href="https://m.me/jaroslav.korinek.750" target="_blank">
               Send a message
             </a>
           </article>

@@ -1,54 +1,46 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG1 from "../../assets/pomodoro.png";
+import IMG2 from "../../assets/kalkulacka.png";
+import IMG3 from "../../assets/drum.png";
+import IMG4 from "../../assets/markdownprev.png";
+import IMG5 from "../../assets/random-quote-generator.png";
 
 const projects = [
   {
     id: 1,
     image: IMG1,
-    title: "Crypto Currency Dashboard&Financial Visualization",
+    title: "Pomodoro Timer",
     github: "https://github.com",
-    demo: "https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization",
+    demo: "https://korinekj.github.io/pomodoro-timer/",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Charts templates&infographics in Figma",
+    title: "Calculator",
     github: "https://github.com",
-    demo: "https://dribbble.com/shots/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma",
+    demo: "https://korinekj.github.io/javascript-calculator/",
   },
   {
     id: 3,
     image: IMG3,
-    title: "Figma dashboard UI kit for data design web apps",
+    title: "Drum Machine",
     github: "https://github.com",
-    demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
+    demo: "https://korinekj.github.io/drum-machine/",
   },
   {
     id: 4,
     image: IMG4,
-    title: "Maintaining tasks and tracking progress",
+    title: "Markdown Previewer",
     github: "https://github.com",
-    demo: "https://dribbble.com/shots/16955822-Maintaining-tasks-and-tracking-progress",
+    demo: "https://korinekj.github.io/markdown-previewer/",
   },
   {
     id: 5,
     image: IMG5,
-    title: "Charts templates&infographics in Figma",
+    title: "Random Quote Generator",
     github: "https://github.com",
-    demo: "https://dribbble.com/shots/16541289-Orion-UI-kit-Charts-templates-infographics-in-Figma",
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Charts templates&infographics in Figma",
-    github: "https://github.com",
-    demo: "https://dribbble.com/shots/15887665-Orion-UI-kit-Charts-templates-infographics-in-Figma",
+    demo: "https://korinekj.github.io/random-quote-generator/",
   },
 ];
 
