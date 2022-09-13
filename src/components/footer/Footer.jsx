@@ -10,13 +10,13 @@ const Footer = () => {
 
   return (
     <footer>
-      <a href="#" className="footer__logo">
+      <a href="/#" className="footer__logo">
         LOGO
       </a>
 
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="/#">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -24,9 +24,9 @@ const Footer = () => {
         <li>
           <a href="#experience">Experience</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#services">Services</a>
-        </li>
+        </li> */}
         <li>
           <a href="#portfolio">Portfolio</a>
         </li>
@@ -39,13 +39,14 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com" target="_blank">
+        <a href="https://facebook.com" target="_blank" rel="noreferrer">
           <FaFacebookF />
         </a>
-        <a href="https://instagram.com" target="_blank">
+
+        <a href="https://instagram.com" target="_blank" rel="noreferrer">
           <FiInstagram />
         </a>
-        <a href="https://twitter.com" target="_blank">
+        <a href="https://twitter.com" target="_blank" rel="noreferrer">
           <IoLogoTwitter />
         </a>
       </div>

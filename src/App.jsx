@@ -3,14 +3,18 @@ import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
-import Services from "./components/services/Services";
+// import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 const App = () => {
-  //Funkce -> Zvýrazní aktuální sekci (nav link) při scrollování stránkou
+  //
+  /**
+   * When the user scrolls, the function will check which section is currently in view and then add the
+   * class 'active' to the corresponding nav link.
+   */
   const highlightNavLinkOnScroll = () => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
@@ -27,17 +31,18 @@ const App = () => {
 
     navLinks.forEach((navItem) => {
       navItem.classList.remove("active");
-      if (navItem.href === "http://localhost:3000/#" + current) {
+      if (navItem.href === "https://jardakorinek.cz/#" + current) {
         navItem.classList.add("active");
       }
     });
   };
 
-  //ComponentDidMount -> pouze při prvním renderu přidá EventListener ([])
+  // Jako ComponentDidMount -> pouze při prvním renderu přidá EventListener ([])
+  /* Adding an event listener to the window object. */
   useEffect(() => {
     window.addEventListener("scroll", highlightNavLinkOnScroll);
 
-    // cleanup this component
+    /* Removing the event listener when the component unmounts. */
     return () => {
       window.removeEventListener("scroll", highlightNavLinkOnScroll);
     };
@@ -49,7 +54,7 @@ const App = () => {
       <Nav />
       <About />
       <Experience />
-      <Services />
+      {/* <Services /> */}
       <Portfolio />
       <Testimonials />
       <Contact />

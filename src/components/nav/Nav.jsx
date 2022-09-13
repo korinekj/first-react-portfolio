@@ -2,7 +2,7 @@ import React from "react";
 import "./nav.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
+// import { RiServiceLine } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <nav>
       <a
-        href="#"
+        href="/#"
         onClick={() => setActiveNav("#")}
         className={activeNav === "#" ? "active" : ""}
       >
@@ -32,13 +32,13 @@ const Nav = () => {
       >
         <BiBook />
       </a>
-      <a
+      {/* <a
         href="#services"
         onClick={() => setActiveNav("services")}
         className={activeNav === "services" ? "active" : ""}
       >
         <RiServiceLine />
-      </a>
+      </a> */}
       <a
         href="#portfolio"
         onClick={() => setActiveNav("portfolio")}
