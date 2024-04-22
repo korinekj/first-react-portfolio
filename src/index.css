@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 /* Vynulování defaultních stylů, které má pro každý element různý prohlížeč jinak */
 * {
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
@@ -61,6 +61,10 @@ h5 {
 
 h1 {
   font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 1rem;
 }
 
 section {
