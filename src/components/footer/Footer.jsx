@@ -1,57 +1,57 @@
-import React from "react";
-import "./footer.css";
+import React from 'react';
+import './footer.css';
 
-import { FaFacebookF } from "react-icons/fa";
-import { FiInstagram } from "react-icons/fi";
-import { IoLogoTwitter } from "react-icons/io";
+import { FaFacebookF } from 'react-icons/fa';
+import { FiInstagram } from 'react-icons/fi';
+import { IoLogoTwitter } from 'react-icons/io';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer>
-      <a href="/#" className="footer__logo">
+      <a href='/#' className='footer__logo'>
         LOGO
       </a>
 
-      <ul className="permalinks">
+      <ul className='permalinks'>
         <li>
-          <a href="/#">Home</a>
+          <a href='/#'>Úvod</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href='#about'>O mně</a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href='#experience'>Zkušenosti</a>
         </li>
         {/* <li>
           <a href="#services">Services</a>
         </li> */}
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href='#portfolio'>Projekty</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
+          <a href='#testimonials'>Reference</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href='#contact'>Kontakt</a>
         </li>
       </ul>
 
-      <div className="footer__socials">
-        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+      <div className='footer__socials'>
+        <a href='https://facebook.com' target='_blank' rel='noreferrer'>
           <FaFacebookF />
         </a>
 
-        <a href="https://instagram.com" target="_blank" rel="noreferrer">
+        <a href='https://instagram.com' target='_blank' rel='noreferrer'>
           <FiInstagram />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noreferrer">
+        <a href='https://twitter.com' target='_blank' rel='noreferrer'>
           <IoLogoTwitter />
         </a>
       </div>
 
-      <div className="footer__copyright">
+      <div className='footer__copyright'>
         <small>
           &copy; Copyright {currentYear}, Jaroslav Kořínek. Všechna práva
           vyhrazena.
