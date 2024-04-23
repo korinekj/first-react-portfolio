@@ -32,8 +32,8 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h5>Ozvěte se</h5>
+      <h2>Kontaktujte mne</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
@@ -42,7 +42,7 @@ const Contact = () => {
             <h4>Email</h4>
             <h5>korinek14.j@gmail.com</h5>
             <a href="mailto:korinek14.j@gmail.com" target="_blank">
-              Send a message
+              Odeslat zprávu
             </a>
           </article>
           <article className="contact__option">
@@ -50,7 +50,7 @@ const Contact = () => {
             <h4>Messenger</h4>
             <h5>Jarda Kořínek</h5>
             <a href="https://m.me/jaroslav.korinek.750" target="_blank">
-              Send a message
+              Odeslat zprávu
             </a>
           </article>
           <article className="contact__option">
@@ -61,7 +61,7 @@ const Contact = () => {
               href="https://api.whatsapp.com/send?phone=+420728716658"
               target="_blank"
             >
-              Send a message
+              Odeslat zprávu
             </a>
           </article>
         </div>
@@ -71,18 +71,18 @@ const Contact = () => {
           <input
             type="text"
             name="name"
-            placeholder="Your Full Name"
+            placeholder="Vaše celé jméno"
             required
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="email" name="email" placeholder="Váš e-mail" required />
           <textarea
             name="message"
             rows="7"
-            placeholder="Your Message"
+            placeholder="Vaše zpráva"
             required
           ></textarea>
           <button type="submit" className="btn btn-primary">
-            Send Message
+            Odeslat zprávu
           </button>
         </form>
       </div>
